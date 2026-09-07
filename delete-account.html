@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Demande de suppression de compte et de données Knight Console.">
+  <meta name="description" content="Suppression du compte et des données Knight Console.">
   <title>Suppression du compte — Knight Console</title>
   <style>
-    :root{--bg:#0b0910;--panel:#15111d;--text:#f1edf7;--muted:#b9afc8;--line:#392d49;--accent:#8f4fe8;--accent2:#4bd8ff;--warn:#f2c66d}
-    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0%,rgba(143,79,232,.16),transparent 33rem),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:860px;margin:auto;padding:42px 20px 70px}header,section{background:rgba(21,17,29,.94);border:1px solid var(--line);border-radius:16px;padding:26px 28px;margin-bottom:18px}h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.08;margin:.1em 0 .35em}h2{font-size:1.35rem;margin:0 0 12px}p{margin:.7em 0}ul,ol{padding-left:1.25rem}li{margin:.5rem 0}.eyebrow{margin:0 0 8px;color:var(--accent2);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.lead{color:var(--muted);font-size:1.05rem}.action{display:inline-block;margin-top:10px;padding:11px 15px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:700}.note{border-left:3px solid var(--warn);padding:12px 14px;background:rgba(242,198,109,.06);border-radius:8px}.muted{color:var(--muted)}a{color:#75ddff}footer{text-align:center;color:var(--muted);font-size:.86rem;margin-top:26px}
+    :root{--bg:#0b0910;--panel:#15111d;--text:#f1edf7;--muted:#b9afc8;--line:#392d49;--accent:#8f4fe8;--accent2:#4bd8ff;--warn:#f2c66d;--danger:#ff596f}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0%,rgba(143,79,232,.16),transparent 33rem),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:860px;margin:auto;padding:42px 20px 70px}header,section{background:rgba(21,17,29,.94);border:1px solid var(--line);border-radius:16px;padding:26px 28px;margin-bottom:18px}h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.08;margin:.1em 0 .35em}h2{font-size:1.35rem;margin:0 0 12px}p{margin:.7em 0}ul,ol{padding-left:1.25rem}li{margin:.5rem 0}.eyebrow{margin:0 0 8px;color:var(--accent2);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.lead,.muted{color:var(--muted)}.note{border-left:3px solid var(--warn);padding:12px 14px;background:rgba(242,198,109,.06);border-radius:8px}.danger{border-left:3px solid var(--danger);padding:12px 14px;background:rgba(255,89,111,.06);border-radius:8px}.action{display:inline-block;margin-top:10px;padding:11px 15px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:700}a{color:#75ddff}footer{text-align:center;color:var(--muted);font-size:.86rem;margin-top:26px}
   </style>
 </head>
 <body>
@@ -15,51 +15,60 @@
   <header>
     <p class="eyebrow">Knight Console</p>
     <h1>Supprimer mon compte et mes données</h1>
-    <p class="lead">Cette page explique comment demander la suppression d'un compte Knight Console et des données Cloud qui lui sont associées.</p>
+    <p class="lead">Depuis la version 1.8.3, Knight Console permet de supprimer directement et automatiquement un compte connecté et ses données Cloud personnelles.</p>
   </header>
 
   <section>
-    <h2>Comment faire la demande</h2>
+    <h2>Suppression automatique dans l'application</h2>
     <ol>
-      <li>Envoyez un e-mail depuis l'adresse utilisée pour votre compte Knight Console à <strong>knightconsole.contact@gmail.com</strong>.</li>
-      <li>Indiquez clairement dans l'objet ou le message : <strong>« Suppression de mon compte Knight Console »</strong>.</li>
-      <li>Précisez l'adresse e-mail du compte concerné si elle n'est pas identique à l'adresse d'envoi.</li>
+      <li>Connectez-vous au compte Knight Console à supprimer.</li>
+      <li>Ouvrez <strong>Réglages</strong> ou <strong>Compte / Cloud</strong>.</li>
+      <li>Choisissez <strong>Supprimer mon compte</strong>.</li>
+      <li>Saisissez le mot de passe du compte.</li>
+      <li>Cochez la confirmation explicite.</li>
+      <li>Attendez le délai de sécurité de <strong>8 secondes</strong>, puis confirmez la suppression définitive.</li>
     </ol>
-    <a class="action" href="mailto:knightconsole.contact@gmail.com?subject=Suppression%20de%20mon%20compte%20Knight%20Console">Demander la suppression par e-mail</a>
-    <p class="muted">Une vérification minimale de l'identité du titulaire du compte peut être demandée afin d'éviter la suppression frauduleuse du compte d'un autre utilisateur.</p>
+    <div class="danger"><strong>Attention :</strong> l'opération est irréversible une fois terminée.</div>
   </section>
 
   <section>
-    <h2>Données supprimées</h2>
-    <p>Après validation de la demande, les données Cloud directement associées au compte doivent être supprimées, notamment lorsqu'elles appartiennent à l'utilisateur :</p>
+    <h2>Données supprimées automatiquement</h2>
+    <p>La procédure vise notamment :</p>
     <ul>
-      <li>le compte d'authentification Knight Console ;</li>
-      <li>le profil et les identifiants Cloud associés ;</li>
-      <li>les personnages et fiches Cloud appartenant au compte ;</li>
-      <li>les demandes et autorisations d'accès Cloud associées ;</li>
-      <li>les sauvegardes Cloud appartenant au compte ;</li>
-      <li>les liens de campagne et autres données directement rattachées au compte, dans la mesure où leur suppression ne détruit pas les données appartenant à d'autres utilisateurs.</li>
+      <li>le compte Firebase Authentication ;</li>
+      <li>le profil Cloud et l'autorisation Cloud du compte ;</li>
+      <li>les demandes d'accès Cloud associées ;</li>
+      <li>les personnages Cloud appartenant au compte ;</li>
+      <li>les sauvegardes Cloud appartenant à ces personnages ;</li>
+      <li>les liens du compte avec les campagnes.</li>
     </ul>
+    <p>Un code d'accès Cloud déjà consommé reste invalidé mais son association directe avec le compte supprimé est anonymisée.</p>
   </section>
 
   <section>
-    <h2>Données pouvant être conservées temporairement</h2>
-    <p>Des copies techniques, sauvegardes ou journaux nécessaires à la sécurité et à l'intégrité du service peuvent subsister temporairement pendant leur purge, pour une durée pouvant aller jusqu'à <strong>30 jours</strong>, sauf obligation légale ou nécessité de sécurité justifiant une durée différente.</p>
-    <p>Les données locales présentes sur vos propres appareils ne sont pas automatiquement supprimées avec le compte Cloud. Elles peuvent nécessiter une suppression locale séparée, par exemple en supprimant les données de l'application ou en désinstallant l'application.</p>
+    <h2>Campagnes partagées et données des autres joueurs</h2>
+    <p>Knight Console ne supprime pas automatiquement une campagne partagée lorsqu'un propriétaire supprime son compte. Le compte est détaché et l'identifiant du propriétaire supprimé est retiré de la campagne afin de ne pas effacer les personnages, fiches ou contenus appartenant aux autres joueurs ou MJ.</p>
   </section>
 
   <section>
-    <h2>Suppression partielle des données</h2>
-    <p>À ce jour, Knight Console ne propose pas de procédure générale permettant de demander la suppression d'une partie arbitraire des données tout en conservant le compte. Une demande de suppression de compte porte sur le compte et les données Cloud qui lui sont associées.</p>
+    <h2>Données locales</h2>
+    <p>La suppression du compte Cloud n'efface pas automatiquement les données enregistrées localement sur l'appareil. Quand c'est possible, Knight Console conserve également une copie locale du personnage personnel actuellement ouvert afin qu'une suppression de compte ne détruise pas silencieusement la fiche locale.</p>
   </section>
 
   <section>
-    <h2>Contact</h2>
-    <p>Pour toute question concernant la suppression d'un compte ou des données : <a href="mailto:knightconsole.contact@gmail.com">knightconsole.contact@gmail.com</a></p>
+    <h2>Si vous ne pouvez plus vous connecter</h2>
+    <p>Si la suppression automatique dans l'application est impossible, vous pouvez demander une suppression manuelle depuis l'adresse e-mail utilisée pour le compte.</p>
+    <a class="action" href="mailto:knightconsole.contact@gmail.com?subject=Suppression%20de%20mon%20compte%20Knight%20Console">Contacter Knight Console</a>
+    <p class="muted">Contact : knightconsole.contact@gmail.com</p>
+  </section>
+
+  <section>
+    <h2>Données techniques ou partagées pouvant être conservées</h2>
+    <p>Des traces techniques, journaux de sécurité anonymisés ou contenus nécessaires à une campagne partagée peuvent être conservés lorsqu'ils sont nécessaires au fonctionnement, à la sécurité ou à la protection des données des autres utilisateurs. Ils ne doivent pas conserver inutilement le profil ou l'adresse e-mail du compte supprimé.</p>
     <p><a href="./">Consulter la politique de confidentialité de Knight Console</a></p>
   </section>
 
-  <footer>Knight Console · Suppression de compte · Dernière mise à jour : 7 septembre 2026</footer>
+  <footer>Knight Console · Suppression de compte · Mise à jour : 7 septembre 2026</footer>
 </main>
 </body>
 </html>
