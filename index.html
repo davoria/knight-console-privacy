@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="description" content="Politique de confidentialité de Knight Console.">
+  <meta name="description" content="Politique de confidentialité de l'application Knight Console.">
   <title>Politique de confidentialité — Knight Console</title>
   <style>
     :root{--bg:#0b0910;--panel:#15111d;--text:#f1edf7;--muted:#b9afc8;--line:#392d49;--accent:#8f4fe8;--accent2:#4bd8ff;--warn:#f2c66d}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 0%,rgba(143,79,232,.16),transparent 33rem),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:920px;margin:auto;padding:42px 20px 70px}header,section{padding:26px 28px;border:1px solid var(--line);border-radius:16px;background:rgba(21,17,29,.94);margin-bottom:18px}h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.06;margin:.1em 0 .35em}h2{font-size:1.35rem;margin:0 0 12px}h3{font-size:1.05rem;margin:20px 0 8px}.eyebrow{margin:0 0 8px;color:var(--accent2);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.lead,.muted{color:var(--muted)}nav{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}nav a{color:var(--text);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 11px}a{color:#75ddff}li{margin:.45rem 0}.warning{border-left:3px solid var(--warn);padding:12px 14px;background:rgba(242,198,109,.06);border-radius:8px}.contact{border:1px dashed var(--warn);padding:14px;border-radius:10px}code{background:#0d0a12;border:1px solid var(--line);border-radius:6px;padding:.12rem .35rem}footer{text-align:center;color:var(--muted);font-size:.86rem;margin-top:26px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 0%,rgba(143,79,232,.16),transparent 33rem),radial-gradient(circle at 90% 20%,rgba(75,216,255,.08),transparent 28rem),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:920px;margin:auto;padding:42px 20px 70px}header,section{padding:26px 28px;border:1px solid var(--line);border-radius:16px;background:rgba(21,17,29,.94);margin-bottom:18px}h1{font-size:clamp(2rem,6vw,3.6rem);line-height:1.05;margin:.1em 0 .35em}h2{font-size:1.35rem;margin:0 0 12px}h3{font-size:1.05rem;margin:20px 0 8px}p{margin:.7em 0}ul{padding-left:1.2rem}.eyebrow{margin:0 0 8px;color:var(--accent2);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.lead,.muted{color:var(--muted)}.note{border-left:3px solid var(--warn);padding:12px 14px;background:rgba(242,198,109,.06);border-radius:8px}a{color:#75ddff}footer{text-align:center;color:var(--muted);font-size:.86rem;margin-top:26px}
   </style>
 </head>
 <body>
@@ -16,30 +16,76 @@
   <header>
     <p class="eyebrow">Knight Console</p>
     <h1>Politique de confidentialité</h1>
-    <p class="lead">Cette politique décrit la manière dont Knight Console traite les données utilisées pour son fonctionnement local, les comptes, la synchronisation Cloud et les campagnes.</p>
+    <p class="lead">Cette politique décrit comment Knight Console traite les données locales, les comptes, la synchronisation Cloud et les campagnes.</p>
     <p class="muted"><strong>Dernière mise à jour :</strong> 7 septembre 2026</p>
-    <nav aria-label="Sommaire"><a href="#donnees">Données</a><a href="#utilisation">Utilisation</a><a href="#partage">Partage</a><a href="#securite">Sécurité</a><a href="#conservation">Conservation</a><a href="#suppression">Suppression</a><a href="#contact">Contact</a></nav>
   </header>
 
-  <section><h2>1. Champ d'application</h2><p>La présente politique s'applique à <strong>Knight Console</strong>, package Android <code>fr.knight.console</code>.</p><p>Knight Console fonctionne en priorité localement et peut être utilisé sans compte. Les fonctions Cloud sont facultatives et leur accès est soumis à autorisation administrateur.</p></section>
+  <section>
+    <h2>1. Fonctionnement local et Cloud</h2>
+    <p>Knight Console fonctionne localement sans compte. Les fonctions Cloud sont facultatives et nécessitent une autorisation administrateur, sauf pour les comptes Administrateur.</p>
+    <p>Le Cloud repose notamment sur Google Firebase Authentication et Cloud Firestore.</p>
+  </section>
 
-  <section id="donnees"><h2>2. Données traitées</h2><h3>Données locales</h3><p>L'application peut conserver sur l'appareil les fiches de personnage, caractéristiques, ressources, armes, armures, modules, améliorations, traumas, implants, états, notes, paramètres, historique local et identifiants techniques nécessaires à la synchronisation.</p><p>Ces données restent locales tant qu'elles ne sont pas volontairement synchronisées ou exportées.</p><h3>Compte et Cloud</h3><p>Lorsqu'un compte est créé ou que les fonctions Cloud sont utilisées, Knight Console peut traiter :</p><ul><li>l'adresse e-mail du compte ;</li><li>l'identifiant utilisateur Firebase (UID) ;</li><li>un identifiant technique d'appareil ou d'installation généré par Knight Console ;</li><li>les fiches et contenus de jeu synchronisés ;</li><li>les campagnes, rôles Joueur/MJ et liens entre membres ;</li><li>les demandes et autorisations d'accès Cloud ;</li><li>les sauvegardes et données nécessaires à la résolution de conflits ;</li><li>l'historique technique ou administratif des actions pertinentes.</li></ul><p>Knight Console ne demande pas l'accès à la position précise, aux contacts, au microphone, à la caméra, aux SMS, aux appels, aux données de santé ou aux informations de paiement.</p></section>
+  <section>
+    <h2>2. Données traitées</h2>
+    <h3>Données locales</h3>
+    <ul>
+      <li>fiches de personnage et valeurs de jeu ;</li>
+      <li>armes, armures, modules, améliorations, traumas, implants et notes ;</li>
+      <li>préférences et historique local ;</li>
+      <li>identifiants techniques générés pour distinguer les appareils lors de la synchronisation.</li>
+    </ul>
+    <h3>Données liées au compte et au Cloud</h3>
+    <ul>
+      <li>adresse e-mail ;</li>
+      <li>identifiant Firebase du compte ;</li>
+      <li>personnages et fiches choisis pour la synchronisation Cloud ;</li>
+      <li>campagnes, rôles Joueur/MJ et liens entre membres ;</li>
+      <li>demandes et autorisations d'accès Cloud ;</li>
+      <li>sauvegardes de sécurité et certaines traces techniques ou administratives.</li>
+    </ul>
+    <p>Knight Console ne demande pas l'accès à la position précise, aux contacts, au microphone, à la caméra, aux SMS, aux appels, aux données de santé ou aux informations de paiement.</p>
+  </section>
 
-  <section id="utilisation"><h2>3. Utilisation des données</h2><p>Les données sont utilisées pour fournir les fonctions de Knight Console : authentification, gestion des fiches, synchronisation entre appareils, gestion des campagnes et rôles, contrôle des accès Cloud, sauvegarde, résolution de conflits et sécurité du service.</p><p><strong>Les données personnelles ne sont pas utilisées pour de la publicité ciblée.</strong></p></section>
+  <section>
+    <h2>3. Utilisation des données</h2>
+    <p>Ces données servent à authentifier les comptes, enregistrer et restaurer les fiches, synchroniser les appareils, gérer les campagnes et rôles, contrôler les autorisations Cloud, préserver les conflits de synchronisation et sécuriser le service.</p>
+    <p><strong>Les données personnelles ne sont pas utilisées pour de la publicité ciblée.</strong></p>
+  </section>
 
-  <section id="partage"><h2>4. Services tiers et partage</h2><p>Les fonctions de compte et de Cloud reposent sur <strong>Google Firebase</strong>, notamment Firebase Authentication et Cloud Firestore. Firebase traite les données nécessaires à l'authentification, au stockage et à la synchronisation.</p><p>Les données ne sont pas vendues à des annonceurs. Certaines données de campagne peuvent être visibles par les autres membres selon leurs droits dans Knight Console.</p></section>
+  <section>
+    <h2>4. Partage et services tiers</h2>
+    <p>Firebase traite les données nécessaires à l'authentification et au stockage Cloud en tant que fournisseur de service. Les données ne sont pas vendues à des annonceurs.</p>
+    <p>Dans une campagne, certaines données de jeu peuvent être accessibles aux autres membres selon les rôles et permissions nécessaires au fonctionnement de la campagne.</p>
+  </section>
 
-  <section id="securite"><h2>5. Sécurité</h2><p>Knight Console utilise Firebase Authentication, les règles de sécurité Firestore et des communications HTTPS/TLS pour les données en transit.</p><p>Le fonctionnement est <strong>local-first</strong> : les modifications sont d'abord conservées localement et les conflits Cloud ne doivent pas écraser silencieusement une version locale divergente.</p><p>Aucun système connecté ne peut toutefois garantir une sécurité absolue.</p></section>
+  <section>
+    <h2>5. Sécurité</h2>
+    <p>Knight Console utilise Firebase Authentication, des règles d'accès Firestore et des communications HTTPS/TLS. Le fonctionnement est local-first : une modification locale ne doit pas être écrasée silencieusement par une version Cloud divergente.</p>
+  </section>
 
-  <section id="conservation"><h2>6. Conservation</h2><p>Les données locales sont conservées sur l'appareil jusqu'à leur suppression locale, la suppression des données de l'application ou sa désinstallation, sous réserve des mécanismes de sauvegarde du système.</p><p>Les données Cloud sont conservées tant que le compte reste actif et que leur conservation est nécessaire aux fonctions demandées.</p><p>Après traitement d'une demande de suppression, des copies techniques ou sauvegardes peuvent subsister temporairement pendant leur purge, jusqu'à <strong>30 jours</strong>, sauf obligation légale ou nécessité de sécurité justifiant une durée différente.</p></section>
+  <section>
+    <h2>6. Conservation</h2>
+    <p>Les données locales restent sur l'appareil jusqu'à leur suppression locale, à la suppression des données de l'application ou à la désinstallation, sous réserve du mécanisme de sauvegarde d'Android.</p>
+    <p>Les données Cloud personnelles sont conservées tant que le compte existe et qu'elles sont nécessaires aux fonctions demandées. Lors d'une suppression de compte, les données Cloud appartenant directement au compte sont ciblées immédiatement par la procédure automatique.</p>
+    <p>Des contenus partagés ou certaines traces techniques et de sécurité anonymisées peuvent être conservés lorsqu'ils sont nécessaires à la protection des autres utilisateurs ou au fonctionnement d'une campagne partagée.</p>
+  </section>
 
-  <section id="suppression"><h2>7. Suppression du compte et des données</h2><p>Un utilisateur peut demander la suppression de son compte Knight Console et des données Cloud qui lui sont associées.</p><div class="warning"><strong>Depuis Knight Console 1.8.3 :</strong> un accès direct à la procédure de suppression est disponible dans les réglages et dans la fenêtre Compte / Cloud. Il ouvre la ressource Web de suppression ci-dessous.</div><p><a href="delete-account.html"><strong>Ouvrir la page de suppression du compte</strong></a></p><p>La demande peut être envoyée depuis cette page à <a href="mailto:knightconsole.contact@gmail.com">knightconsole.contact@gmail.com</a>. Les données locales présentes sur les appareils restent séparées du compte Cloud et peuvent nécessiter une suppression locale distincte.</p></section>
+  <section id="suppression">
+    <h2>7. Suppression du compte et des données</h2>
+    <p>Depuis Knight Console 1.8.3, un utilisateur connecté peut lancer une suppression automatique depuis <strong>Réglages</strong> ou <strong>Compte / Cloud</strong>.</p>
+    <div class="note">La suppression exige le mot de passe du compte, une confirmation explicite et un délai de sécurité de 8 secondes avant la validation définitive.</div>
+    <p>La procédure supprime le compte Firebase Authentication, le profil Cloud, les demandes d'accès, les personnages Cloud appartenant au compte, leurs sauvegardes personnelles et les liens de campagne du compte.</p>
+    <p>Une campagne partagée n'est pas supprimée automatiquement : le compte supprimé est détaché afin de ne pas détruire les données des autres joueurs ou MJ.</p>
+    <p>Les données locales de l'appareil ne sont pas automatiquement effacées.</p>
+    <p><a href="./delete-account.html">Consulter la procédure détaillée de suppression</a></p>
+  </section>
 
-  <section><h2>8. Accès et rectification</h2><p>Pour toute question relative aux données personnelles, à leur accès, leur rectification ou leur suppression, utilisez l'adresse de contact ci-dessous.</p></section>
+  <section>
+    <h2>8. Contact</h2>
+    <p>Pour toute question relative aux données ou si vous ne pouvez plus vous connecter pour utiliser la suppression automatique : <a href="mailto:knightconsole.contact@gmail.com">knightconsole.contact@gmail.com</a></p>
+  </section>
 
-  <section id="contact"><h2>9. Contact</h2><div class="contact"><p><strong>Application :</strong> Knight Console</p><p><strong>Contact confidentialité et suppression :</strong> <a href="mailto:knightconsole.contact@gmail.com">knightconsole.contact@gmail.com</a></p></div></section>
-
-  <section><h2>10. Modifications de cette politique</h2><p>Cette politique peut être mise à jour lorsque Knight Console évolue. La date affichée en haut de cette page sera alors actualisée.</p></section>
   <footer>Knight Console · Politique de confidentialité · 2026</footer>
 </main>
 </body>
